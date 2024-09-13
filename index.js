@@ -20,7 +20,7 @@ function slugify(text) {
     "/": "-",
     ">": "-greater-",
     "<": "-less-",
-    "!": "-exclamation-",
+    "!": "-",
     "^": "-caret-",
     ".": "-",
   };

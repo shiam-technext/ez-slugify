@@ -61,7 +61,7 @@ describe("Slugify Function", function () {
 
   it("should collapse multiple dashes into one", function () {
     expect(slugify("Dash - Dash and  -  Space!")).to.equal(
-      "dash-dash-and-space-exclamation"
+      "dash-dash-and-space"
     );
   });
 
@@ -71,7 +71,7 @@ describe("Slugify Function", function () {
 
   it("should replace complex strings with multiple symbols and words", function () {
     expect(slugify("Item $100 @ Price 50% off!")).to.equal(
-      "item-dollar-100-at-price-50-percent-off-exclamation"
+      "item-dollar-100-at-price-50-percent-off"
     );
   });
 });

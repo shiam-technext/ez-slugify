@@ -38,8 +38,7 @@ console.log(slug); // Outputs: price-dollar100-and-50-percent-off
 | Café con Leche  | cafe-con-leche  |
 | Price: $100 & 50% off!  | price-dollar100-and-50-percent-off  |
 | Currency: ¢, £, ¥, ¤  | currency-cent-pound-yen-currency  |
-| Special symbols like @, +, *!  | special-symbols-like-at-plus-star-exclamation
-  |
+| Special symbols like @, +, *!  | special-symbols-like-at-plus-star-exclamation |
 
 ## API
 

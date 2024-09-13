@@ -5,18 +5,24 @@ function slugify(text) {
 
   const symbolMap = {
     "&": "-and-",
+    "|": "-or-",
     $: "-dollar-",
+    "¢": "-cent-",
+    "£": "-pound-",
+    "¤": "-currency-",
+    "¥": "-yen-",
     "@": "-at-",
     "%": "-percent-",
-    "#": "-number-",
+    // "#": "-number-",
     "*": "-star-",
     "+": "-plus-",
     "=": "-equals-",
-    "/": "-slash-",
+    "/": "-",
     ">": "-greater-",
     "<": "-less-",
     "!": "-exclamation-",
     "^": "-caret-",
+    ".": "-",
   };
 
   return (
@@ -27,7 +33,7 @@ function slugify(text) {
       .toLowerCase() // Convert to lowercase
       .trim() // Trim whitespace
       // Replace symbols with corresponding words using the symbolMap
-      .replace(/[&\$\@%\#\*\+\=\/<>!^]/g, (match) => symbolMap[match])
+      .replace(/[&|$¢£¤¥@%\*\+\=\/<>!^\.]/g, (match) => symbolMap[match])
       // Remove all remaining non-alphanumeric characters except spaces and dashes
       .replace(/[^a-z0-9\s-]/g, "")
       // Replace spaces and multiple dashes with a single dash

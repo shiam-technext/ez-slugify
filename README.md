@@ -19,13 +19,17 @@ You can install the `ez-slugify` package via npm:
 npm install ez-slugify
 ```
 
+## Demo
+
+You can try out a live demo of `ez-slugify` here: [Live Demo](https://ez-slugify.vercel.app/)
+
 ## Usage
 
 To use the `slugify` function in your project:
 
+```javascript
 const slugify = require('ez-slugify');
 
-```javascript
 const slug = slugify('Price: $100 & 50% off!');
 console.log(slug); // Outputs: price-dollar100-and-50-percent-off
 ```
